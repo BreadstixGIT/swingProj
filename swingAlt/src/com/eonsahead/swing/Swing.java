@@ -11,8 +11,9 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JPanel;
+//import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class Swing extends JFrame implements ActionListener {
 
     private final int FRAME_WIDTH = 512;
@@ -101,7 +102,8 @@ public class Swing extends JFrame implements ActionListener {
     } // actionPerformed( ActionEvent )
 
     public static void main(String[] args) {
-        Swing swing = new Swing();
+        @SuppressWarnings("unused")
+		Swing swing = new Swing();
     } // main( String [] )
 
 } // Swing
